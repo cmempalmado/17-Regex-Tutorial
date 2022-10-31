@@ -88,7 +88,7 @@ There are 6 flags we can use and these are the following: <br />
 
 ## Author
 
-You can view all my work at Github with this link.
+You can view all my work at Github with this link:  <br />
 https://github.com/cmempalmado
 
 ---
