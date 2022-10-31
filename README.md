@@ -40,11 +40,11 @@ To match an email the anchors used are the following:
 
 Quantifiers used are the following:
 
-`{}` is used to show the amount of characters matching.
-`{2,6}` the 2 indicates the minimum amount, and the 6 being the maximum amount of characters.
-`a-z` is used to match if there are any letters from a-z.
-`0-9` is also used to match if there are any digits.
-`_`, `.`, and `-` is also used to find if the email has any underscore, period, and dash.
+`{}` is used to show the amount of characters matching. <br />
+`{2,6}` the 2 indicates the minimum amount, and the 6 being the maximum amount of characters. <br />
+`a-z` is used to match if there are any letters from a-z. <br />
+`0-9` is also used to match if there are any digits. <br />
+`_`, `.`, and `-` is also used to find if the email has any underscore, period, and dash. <br />
 `+` is used to connect the email name, followed by email server, then ends with the domain; `.com`, `.org`, `.info`, etc.
 
 ### Grouping Constructs
@@ -73,10 +73,10 @@ OR operator is used with `|` symbol. If what we're matching is a specific domain
 There are no flags on the email address pattern since we do not need it.
 There are 6 flags we can use and these are the following:
 
-`g` This is a flag that looks for all matches.
+`g` This is a flag that looks for all matches.\n
 `m` This is a flag that enables multiline mode.
 `i` This is a flag that search case-insensitive.
-`s` This is a flag that allows a dot to match `/n` (newline) character
+`s` This is a flag that allows a dot to match `/n` (newline) character.
 `u` This is a flag that enables correct processing of rare characters like `©`, `™`, or emojis.
 `y` This is a flag that searches the exact position in the text.
 
