@@ -21,6 +21,7 @@ I will be breaking down the definitions on how to match a search pattern of an e
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
+- [Author](#author)
 
 ## Regex Components
 
@@ -60,6 +61,7 @@ Brackets are used to contain patterns as a set. <br />
 ### Character Classes
 
 Character Classes are the ones that appears in between square brackets. <br />
+`\d` is used to find one digit from 0-9. <br />
 The brackets used in the expression is the one that validates the email name, email server, and domain. <br />
 This example of Character Class `([a-z\.]{2,6})` validates the domain with a minimum of 2 up to a maximum of 6.
 
