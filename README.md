@@ -93,6 +93,11 @@ There are 6 flags we can use and these are the following: <br />
 You can view all my work at Github with this link:  <br />
 https://github.com/cmempalmado
 
+
+## GIST URL
+
+https://gist.github.com/cmempalmado/86b5be2cf0f082d7f681a98c19bba6ca
+
 ---
 Copyright © [2022] [Christian Empalmado]
 
