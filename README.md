@@ -7,7 +7,7 @@ My assignment is to create a tutorial that explains how a specific regular expre
 ## Summary
 
 ```
-I will be breaking down how to match a search pattern of an email address using regex.
+I will be breaking down the definitions on how to match a search pattern of an email address using regex.
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 ```
 
@@ -23,6 +23,8 @@ I will be breaking down how to match a search pattern of an email address using 
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
+
+This is the regex pattern used to match an email address.
 ```
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ```
@@ -30,23 +32,20 @@ I will be breaking down how to match a search pattern of an email address using 
 ### Anchors
 
 To match an email the anchors used are the following:
-```
+
 `^` is used to indicate the beginning position of the pattern.
 `$` is used to indicate the end position of the pattern.
-```
-
 
 ### Quantifiers
 
 Quantifiers used are the following:
-```
-`{2,6}` the 2 indicates the minimum amount, and 6 being the maximum amount of characters.
+
+`{}` is used to show the amount of characters matching.
+`{2,6}` the 2 indicates the minimum amount, and the 6 being the maximum amount of characters.
 `a-z` is used to match if there are any letters from a-z.
 `0-9` is also used to match if there are any digits.
 `_`, `.`, and `-` is also used to find if the email has any underscore, period, and dash.
 `+` is used to connect the email name, followed by email server, then ends with the domain; `.com`, `.org`, `.info`, etc.
-```
-
 
 ### Grouping Constructs
 
@@ -56,32 +55,41 @@ The first grouping constructs used is the `([a-z0-9_\.-]+)` that indicates that 
 ### Bracket Expressions
 
 Brackets are used to contain patterns as a set.
-`[]` is used in the first part of the email with `a-z`, `0-9`, `_`, `.`, `-`. It is necessary to validate the email name if it contains any of the following.
+`[]` is used in the first part of the email with `a-z`, `0-9`, `_`, `.`, `-`. It is necessary to validate the email name if it contains any letters, digits, underscore, period, or dash.
 
 ### Character Classes
 
-Character Classes
+Character Classes are the ones that appears in between square brackets.
+The brackets used in the expression is the one that validates the email name, email server, and domain.
+This example of Character Class `([a-z\.]{2,6})` validates the domain with a minimum of 2 up to a maximum of 6.
 
 ### The OR Operator
 
-```
-
-```
+OR expression is not used in this tutorial since there is no use for that expression, since we look for any characters.
+OR operator is used with `|` symbol. If what we're matching is a specific domain name with `.com`, `.org`, and `.info` for example; we could write `.(com|org|info)`.
 
 ### Flags
 
-```
+There are no flags on the email address pattern since we do not need it.
+There are 6 flags we can use and these are the following:
 
-```
+`g` This is a flag that looks for all matches.
+`m` This is a flag that enables multiline mode.
+`i` This is a flag that search case-insensitive.
+`s` This is a flag that allows a dot to match `/n` (newline) character
+`u` This is a flag that enables correct processing of rare characters like `©`, `™`, or emojis.
+`y` This is a flag that searches the exact position in the text.
+
+ With these descriptions, now it makes all sense why flags are not used in the pattern.
 
 ### Character Escapes
 
-```
-
-```
+`\` is used as a character escape. The backslash in a regular expression precedes a literal character. You also escape certain letters that represent common character classes, such as `\w` for one word character or `\s` for one space.
 
 ## Author
 
+You can view all my work at Github with this link.
+https://github.com/cmempalmado
 
 ---
 Copyright © [2022] [Christian Empalmado]
