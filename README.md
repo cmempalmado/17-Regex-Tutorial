@@ -33,12 +33,12 @@ This is the regex pattern used to match an email address.
 
 To match an email the anchors used are the following:
 
-`^` is used to indicate the beginning position of the pattern.
+`^` is used to indicate the beginning position of the pattern. <br />
 `$` is used to indicate the end position of the pattern.
 
 ### Quantifiers
 
-Quantifiers used are the following:
+Quantifiers used are the following: <br />
 
 `{}` is used to show the amount of characters matching. <br />
 `{2,6}` the 2 indicates the minimum amount, and the 6 being the maximum amount of characters. <br />
@@ -49,36 +49,36 @@ Quantifiers used are the following:
 
 ### Grouping Constructs
 
-`()` are used to group the patterns followed by a `+` to add more pattern.
+`()` are used to group the patterns followed by a `+` to add more pattern. <br />
 The first grouping constructs used is the `([a-z0-9_\.-]+)` that indicates that the first part of the pattern will be the email name followed by `([\da-z\.-]+)` that indicates the email server then ends with `([a-z\.]{2,6})` which indicates the domain name.
 
 ### Bracket Expressions
 
-Brackets are used to contain patterns as a set.
+Brackets are used to contain patterns as a set. <br />
 `[]` is used in the first part of the email with `a-z`, `0-9`, `_`, `.`, `-`. It is necessary to validate the email name if it contains any letters, digits, underscore, period, or dash.
 
 ### Character Classes
 
-Character Classes are the ones that appears in between square brackets.
-The brackets used in the expression is the one that validates the email name, email server, and domain.
+Character Classes are the ones that appears in between square brackets. <br />
+The brackets used in the expression is the one that validates the email name, email server, and domain. <br />
 This example of Character Class `([a-z\.]{2,6})` validates the domain with a minimum of 2 up to a maximum of 6.
 
 ### The OR Operator
 
-OR expression is not used in this tutorial since there is no use for that expression, since we look for any characters.
+OR expression is not used in this tutorial since there is no use for that expression, since we look for any characters. <br />
 OR operator is used with `|` symbol. If what we're matching is a specific domain name with `.com`, `.org`, and `.info` for example; we could write `.(com|org|info)`.
 
 ### Flags
 
-There are no flags on the email address pattern since we do not need it.
-There are 6 flags we can use and these are the following:
+There are no flags on the email address pattern since we do not need it. <br />
+There are 6 flags we can use and these are the following: <br />
 
-`g` This is a flag that looks for all matches.\n
-`m` This is a flag that enables multiline mode.
-`i` This is a flag that search case-insensitive.
-`s` This is a flag that allows a dot to match `/n` (newline) character.
-`u` This is a flag that enables correct processing of rare characters like `©`, `™`, or emojis.
-`y` This is a flag that searches the exact position in the text.
+`g` This is a flag that looks for all matches. <br />
+`m` This is a flag that enables multiline mode. <br />
+`i` This is a flag that search case-insensitive. <br />
+`s` This is a flag that allows a dot to match `/n` (newline) character. <br />
+`u` This is a flag that enables correct processing of rare characters like `©`, `™`, or emojis. <br />
+`y` This is a flag that searches the exact position in the text. <br />
 
  With these descriptions, now it makes all sense why flags are not used in the pattern.
 
